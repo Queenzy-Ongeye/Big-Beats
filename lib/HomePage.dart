@@ -1,3 +1,4 @@
+import 'package:bigbeats/widgets/MusicList.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -79,10 +80,10 @@ class HomePage extends StatelessWidget {
                     padding: EdgeInsets.only(top: 15, right: 20, bottom: 20),
                     child: Container(
                       height: 50,
-                      width: 380,
+                      width: double.infinity,
                       decoration: BoxDecoration(
                         color: Color(0xFF31314F),
-                        borderRadius: BorderRadius.circular(8),
+                        borderRadius: BorderRadius.circular(10),
                       ),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -91,7 +92,9 @@ class HomePage extends StatelessWidget {
                             margin: EdgeInsets.symmetric(horizontal: 15),
                             height: 50,
                             width: 200,
-                            child: TextFormField(
+                            // elevation: 10.0,
+                            child: TextField(
+                              textAlignVertical: TextAlignVertical.center,
                               decoration: InputDecoration(
                                 hintText: "Search music",
                                 hintStyle: TextStyle(
