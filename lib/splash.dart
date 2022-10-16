@@ -3,6 +3,8 @@ import 'dart:js';
 import 'package:bigbeats/main.dart';
 import 'package:flutter/material.dart';
 
+import 'HomePage.dart';
+
 class Splash extends StatefulWidget {
   const Splash({Key? key}) : super(key: key);
 
@@ -19,7 +21,7 @@ class _SplashState extends State<Splash> {
 
   void navigateToHome()async {
     await Future.delayed(Duration(milliseconds: 1500), () {});
-    Navigator.pushReplacement(this.context, MaterialPageRoute(builder: (context)=> MyApp()));
+    Navigator.pushReplacement(this.context, MaterialPageRoute(builder: (context)=> HomePage()));
   }
   @override
   Widget build(BuildContext context) {

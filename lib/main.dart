@@ -1,6 +1,8 @@
 import 'package:bigbeats/splash.dart';
 import 'package:flutter/material.dart';
 
+import 'HomePage.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -11,8 +13,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      routes:
-      "/": (context) => HomePage(),
+      routes:{
+        "/": (context) => HomePage(),
+      }
     );
   }
 }
