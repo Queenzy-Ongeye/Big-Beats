@@ -20,7 +20,7 @@ class HomePage extends StatelessWidget {
               ]),
         ),
         child: Scaffold(
-          backgroundColor: Colors.transparent,
+          backgroundColor: Colors.blueGrey,
           body: SafeArea(
             child: Padding(
               padding: EdgeInsets.only(top: 20, left: 22),
@@ -139,13 +139,18 @@ class HomePage extends StatelessWidget {
                     ],
                   ),
                   Flexible(
-                      flex: 1,
-                      child: TabBarView(children: [
+                    flex: 1,
+                    child: TabBarView(
+                      children: [
                         MusicList(),
                         PlayList(),
-                        Container(color: Colors.red),
-                        Container(color: Colors.red),
-                      ]))
+                        PlayList(),
+                        PlayList(),
+                        PlayList(),
+                        PlayList(),
+                      ],
+                    ),
+                  ),
                 ],
               ),
             ),
