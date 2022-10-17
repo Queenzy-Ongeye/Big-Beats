@@ -1,4 +1,5 @@
 import 'package:bigbeats/widgets/MusicList.dart';
+import 'package:bigbeats/widgets/PlayList.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -141,7 +142,7 @@ class HomePage extends StatelessWidget {
                       flex: 1,
                       child: TabBarView(children: [
                         MusicList(),
-                        Container(color: Colors.red),
+                        PlayList(),
                         Container(color: Colors.red),
                         Container(color: Colors.red),
                       ]))
