@@ -1,6 +1,6 @@
 # bigbeats
 
-A new Flutter project.
+A music playlist app.
 
 ## Getting Started
 

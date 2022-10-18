@@ -1,5 +1,6 @@
 import 'package:bigbeats/widgets/MusicList.dart';
 import 'package:bigbeats/widgets/PlayList.dart';
+import 'package:bigbeats/widgets/PlayListPage.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -20,7 +21,7 @@ class HomePage extends StatelessWidget {
               ]),
         ),
         child: Scaffold(
-          backgroundColor: Colors.blueGrey,
+          backgroundColor: Color(0xFF0D0E26),
           body: SafeArea(
             child: Padding(
               padding: EdgeInsets.only(top: 20, left: 22),

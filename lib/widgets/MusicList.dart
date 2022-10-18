@@ -11,88 +11,89 @@ class MusicList extends StatelessWidget {
           SizedBox(
             height: 15,
           ),
-          for(int i = 1; i<20; i++)
-          Container(
-            margin: EdgeInsets.only(top: 15, right: 12, left: 5),
-            padding: EdgeInsets.symmetric(vertical: 10, horizontal: 15),
-            decoration: BoxDecoration(
-              color: Color(0xFF303144),
-              borderRadius: BorderRadius.circular(20),
-            ),
-            child: Row(
-              children: [
-                Text(
-                  i.toString(),
-                  style: TextStyle(
-                    color: Colors.white70,
-                    fontSize: 10,
-                    fontWeight: FontWeight.w400,
+          for (int i = 1; i < 20; i++)
+            Container(
+              margin: EdgeInsets.only(top: 15, right: 12, left: 5),
+              padding: EdgeInsets.symmetric(vertical: 10, horizontal: 15),
+              decoration: BoxDecoration(
+                color: Color(0xFF303144),
+                borderRadius: BorderRadius.circular(20),
+              ),
+              child: Row(
+                children: [
+                  Text(
+                    i.toString(),
+                    style: TextStyle(
+                      color: Colors.white70,
+                      fontSize: 10,
+                      fontWeight: FontWeight.w400,
+                    ),
                   ),
-                ),
-                SizedBox(
-                  width: 25,
-                ),
-                InkWell(
-                  onTap: () {
-                    Navigator.pushNamed(context, 'musicPage');
-                  },
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        'Imagine Dragons - Believer',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 20,
-                          fontWeight: FontWeight.w300,
+                  SizedBox(
+                    width: 25,
+                  ),
+                  InkWell(
+                    onTap: () {
+                      Navigator.pushNamed(context, 'musicPage');
+                    },
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Imagine Dragons - Believer',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 20,
+                            fontWeight: FontWeight.w300,
+                          ),
                         ),
-                      ),
-                      Row(
-                        children: [
-                          Text(
-                            'Bass',
-                            style: TextStyle(
-                              color: Colors.white.withOpacity(0.8),
-                              fontSize: 16,
+                        Row(
+                          children: [
+                            Text(
+                              'Bass',
+                              style: TextStyle(
+                                color: Colors.white.withOpacity(0.8),
+                                fontSize: 16,
+                              ),
                             ),
-                          ),
-                          SizedBox(width: 5),
-                          Text(
-                            '---',
-                            style: TextStyle(
-                              color: Colors.white.withOpacity(0.6),
-                              fontSize: 25,
+                            SizedBox(width: 5),
+                            Text(
+                              '---',
+                              style: TextStyle(
+                                color: Colors.white.withOpacity(0.6),
+                                fontSize: 25,
+                              ),
                             ),
-                          ),
-                          SizedBox(width: 5),
-                          Text(
-                            "5:00",
-                            style: TextStyle(
-                              color: Colors.white.withOpacity(0.6),
-                              fontWeight: FontWeight.w500,
+                            SizedBox(width: 5),
+                            Text(
+                              "5:00",
+                              style: TextStyle(
+                                color: Colors.white.withOpacity(0.6),
+                                fontWeight: FontWeight.w500,
+                              ),
                             ),
-                          ),
-                        ],
-                      )
-                    ],
+                          ],
+                        )
+                      ],
+                    ),
                   ),
-                ),
-                Spacer(),
-                Container(
-                  height: 35,
-                  width: 35,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(30),
+                  Spacer(),
+                  Container(
+                    height: 35,
+                    width: 35,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(30),
+                    ),
+                    child: Icon(
+                      Icons.play_arrow,
+                      size: 30,
+                      color: Colors.black,
+                    ),
                   ),
-                  child: Icon(Icons.play_arrow,
-                    size: 30,
-                    color: Colors.black,
-                  ),
-                ),
-              ],
+                ],
+              ),
             ),
-          ),
         ],
       ),
     );
