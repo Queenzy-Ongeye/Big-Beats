@@ -177,7 +177,7 @@ class PlayListPage extends StatelessWidget {
                         ),
                         InkWell(
                           onTap: () {
-                            Navigator.pushNamed(context, 'musicPage');
+                            Navigator.pushNamed(context, 'MusicPage');
                           },
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,

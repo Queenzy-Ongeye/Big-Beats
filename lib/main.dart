@@ -1,5 +1,6 @@
 import 'package:bigbeats/splash.dart';
 import 'package:bigbeats/widgets/MusicList.dart';
+import 'package:bigbeats/widgets/MusicPage.dart';
 import 'package:bigbeats/widgets/PlayList.dart';
 import 'package:bigbeats/widgets/PlayListPage.dart';
 import 'package:flutter/material.dart';
@@ -18,8 +19,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       routes:{
         "/": (context) => Splash(),
-        "musicPage" : (context) => MusicList(),
         "playListPage" : (context) => PlayListPage(),
+        "MusicPage" : (context) => MusicPage(),
 
       }
     );
